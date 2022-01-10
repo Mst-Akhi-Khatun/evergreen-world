@@ -7,6 +7,7 @@ import {
   Link
 } from "react-router-dom";
 import MenuBar from './components/Header/MenuBar/MenuBar';
+import Home from './components/Home/Home';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         <MenuBar></MenuBar>
         <Switch>
           <Route>
-
+            <Home></Home>
           </Route>
         </Switch>
       </Router>
