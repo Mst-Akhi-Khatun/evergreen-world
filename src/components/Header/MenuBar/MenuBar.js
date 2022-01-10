@@ -35,7 +35,6 @@ const MenuBar = () => {
                             <Navbar.Brand href="#home"><span className="colorGreen">STORE</span></Navbar.Brand>
                             <Navbar.Brand href="#home"><span className="colorGreen">GALLERY</span></Navbar.Brand>
                             <Navbar.Brand href="#features"><span className="colorGreen">ABOUT</span></Navbar.Brand>
-                            <Navbar.Brand href="#pricing"><span className="colorGreen">BLOG</span></Navbar.Brand>
                             <Nav.Link href="#pricing"><span className="colorGreen">CONTACT</span></Nav.Link>
                         </Nav>
                     </Container>

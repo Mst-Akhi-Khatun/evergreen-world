@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import MenuBar from './components/Header/MenuBar/MenuBar';
 import Home from './components/Home/Home';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,7 +19,11 @@ function App() {
           <Route>
             <Home></Home>
           </Route>
+          <Route>
+            
+          </Route>
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );

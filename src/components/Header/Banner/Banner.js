@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import bannerImage from '../../../images/Banner/banner.png';
 import 'animate.css';
+import './Banner.css';
 
 const Banner = () => {
     return (
-        <div>
+        <div className="banner-section">
             <div className="banner-bg py-3 mt-5" style={{ minHeight: "490px" }}>
                 <div className="container py-4">
                     <div className="row d-flex align-items-center">

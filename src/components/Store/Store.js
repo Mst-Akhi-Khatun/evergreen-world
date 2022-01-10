@@ -10,6 +10,7 @@ import store4 from '../../images/Store/store-4.jpg';
 const Store = () => {
     return (
         <div className="store">
+            <h1 className="text-center colorGreen py-4">This is Store Area</h1>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
                     <div class="card h-100">
