@@ -5,7 +5,7 @@ import './Gallery.css'
 const Gallery = () => {
     return (
         <div className="py-5 gallery">
-            <h1 className="text-center colorGreen">this is gallery</h1>
+            <h1 className="text-center">this is gallery</h1>
 
             <div className="row">
                 <div class="col-md-4">

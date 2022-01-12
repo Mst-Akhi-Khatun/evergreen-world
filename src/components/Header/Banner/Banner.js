@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import bannerImage from '../../../images/Banner/banner.png';
+import banner1 from '../../../images/Banner/banner-1.png';
 import 'animate.css';
 import './Banner.css';
 
@@ -22,7 +23,7 @@ const Banner = () => {
                             </Link>
                         </div>
                         <div className="col-md-6 animate__animated animate__backInRight">
-                            <img src={bannerImage} alt="" className="img-fluid" />
+                            <img src={banner1} alt="" className="img-fluid" />
                         </div>
                     </div>
                 </div>
