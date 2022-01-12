@@ -1,0 +1,61 @@
+.single-assessment {
+  border: 3px solid #6cbe03;
+  position: relative;
+  padding: 50px 20px;
+  transition: all 0.5s ease 0s;
+}
+.single-assessment a.garden-btn {
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.garden-btn {
+  width: 160px;
+  height: 50px;
+  display: inline-block;
+  color: #fff;
+  border-radius: 30px;
+  text-transform: capitalize;
+  background-color: #6cbe03;
+  font-weight: 600;
+  text-align: center;
+  line-height: 50px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.move-eff span {
+  z-index: 2;
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/* .move-eff::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 190px solid rgba(255, 255, 255, 0.25);
+  z-index: 1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} */

@@ -1,4 +1,6 @@
 import React from 'react';
+import Assessment from '../Assessment/Assessment';
+import ChooseUs from '../ChooseUs/ChooseUs';
 import Features from '../Features/Features';
 import Gallery from '../Gallery/Gallery';
 import Banner from '../Header/Banner/Banner';
@@ -13,6 +15,8 @@ const Home = () => {
             <Service></Service>
             <Gallery></Gallery>
             <Team></Team>
+            <ChooseUs></ChooseUs>
+            <Assessment></Assessment>
         </div>
     );
 };

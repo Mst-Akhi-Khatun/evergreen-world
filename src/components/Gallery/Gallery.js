@@ -45,7 +45,7 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-4 g-4 py-5">
+            <div class="row row-cols-1 row-cols-md-4 g-4 pt-4">
                 <div class="col">
                     <div class="card">
                         <img src={gallery5} class="card-img-top" alt="..." />
@@ -67,7 +67,7 @@ const Gallery = () => {
                     </div>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="row row-cols-1 row-cols-md-4 g-4 pt-4">
                 <div class="col">
                     <div class="card">
                         <img src={gallery9} class="card-img-top" alt="..." />

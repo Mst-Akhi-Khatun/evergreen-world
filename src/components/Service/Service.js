@@ -11,7 +11,7 @@ import service6 from '../../images/Service/service6.png';
 
 const Service = () => {
     return (
-        <div className="service-container container">
+        <div className="service-container container py-5">
             <div className="main-section">
                 <div className="text-center">
                     <h1 className="text-center pt-4">Our <span className="text-color">Service</span></h1>

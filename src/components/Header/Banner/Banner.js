@@ -12,10 +12,10 @@ const Banner = () => {
                 <div className="container py-4">
                     <div className="row d-flex align-items-center">
                         <div className="col-md-6 animate__animated animate__backInLeft">
-                            <h1 className="text-uppercase fw-bold mt-4">
+                            <h1 className="text-uppercase fw-bold mt-4 text-color">
                                 plants for healthy
                             </h1>
-                            <h5 className="w-75 my-4">
+                            <h5 className="w-75 my-4 font">
                                 “If you cut a tree, you kill a life. If you save a tree, you save a life. If you plant a tree, you plant a life.” - Trees make the environment cleaner and provide us with oxygen.
                             </h5>
                             <Link to="/allProducts">

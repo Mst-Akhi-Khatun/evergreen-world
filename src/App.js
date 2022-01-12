@@ -12,7 +12,7 @@ import Footer from './components/Footer/Footer';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Router>
         <MenuBar></MenuBar>
         <Switch>
