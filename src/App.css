@@ -2,3 +2,13 @@
   text-align: center;
   overflow: hidden;
 }
+
+.text-color {
+  color: #6cbe03;
+}
+
+.font {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #545454;
+}

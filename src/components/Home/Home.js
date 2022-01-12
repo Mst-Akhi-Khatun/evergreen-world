@@ -1,14 +1,16 @@
 import React from 'react';
 import Gallery from '../Gallery/Gallery';
 import Banner from '../Header/Banner/Banner';
-import Store from '../Store/Store';
+import Service from '../Service/Service';
+import Team from '../Team/Team';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <Store></Store>
+            <Service></Service>
             <Gallery></Gallery>
+            <Team></Team>
         </div>
     );
 };
