@@ -1,83 +1,87 @@
 import React from 'react';
 import './Service.css';
-import store1 from '../../images/Store/store-1.jpg';
-import store2 from '../../images/Store/store-2.jpg';
-import store3 from '../../images/Store/store-3.jpg';
-import store4 from '../../images/Store/store-4.jpg';
-
-
+import mainService from '../../images/Service/mainService.png';
+import service from '../../images/Service/service.png';
+import service1 from '../../images/Service/service1.png';
+import service2 from '../../images/Service/service2.png';
+import service3 from '../../images/Service/service3.png';
+import service4 from '../../images/Service/service4.png';
+import service5 from '../../images/Service/service5.png';
+import service6 from '../../images/Service/service6.png';
 
 const Service = () => {
     return (
-        <div className="service-container">
+        <div className="service-container container">
             <div className="main-section">
-                <div className="section-title">
-                    <h1 className="text-center py-4">Our <span className="text-color">Service</span></h1>
+                <div className="text-center">
+                    <h1 className="text-center pt-4">Our <span className="text-color">Service</span></h1>
+                    <img src={service} alt="" />
                 </div>
             </div>
-            <p className="text-center pt-5 font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laudantium unde, dolores est <br /> corporis, sunt deserunt sequi.</p>
-            <div className="container">
-                <div className="row row-cols-1 row-cols-md-3 g-4 pb-3">
-                    <div className="col">
-                        <div className="h-100 parent">
-                            <div className="card-body single-service text-center">
-                                <h3 className="card-title text-color">Card title</h3>
-                                <h2><i className="fas fa-trash-alt text-color"></i></h2>
-                                <p className="card-text">Lawn Clean
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
+            <div className="row pt-5">
+                <div className="col-md-4">
+                    <div className="row">
+                        <div className="col-md-2">
+                            <img src={service1} alt="" />
+                        </div>
+                        <div className="col-md-10">
+                            <h4>Land Scaping Design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectet micongue kladipiscing hlelit. Donec ut diam pulvinar, lorem elits bibendum tellus quis, sodales tortor.</p>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="h-100">
-                            <div className="card-body text-center">
-                                <h3 className="card-title text-color">Card title</h3>
-                                <h2><i className="fas fa-trash-alt text-color"></i></h2>
-                                <p className="card-text">Lawn Clean
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
+                    <div className="row">
+                        <div className="col-md-2">
+                            <img src={service2} alt="" />
+                        </div>
+                        <div className="col-md-10">
+                            <h4>Land Scaping Design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectet micongue kladipiscing hlelit. Donec ut diam pulvinar, lorem elits bibendum tellus quis, sodales tortor.</p>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="h-100">
-                            <div className="card-body text-center">
-                                <h3 className="card-title text-color">Card title</h3>
-                                <h2><i className="fas fa-trash-alt text-color"></i></h2>
-                                <p className="card-text">Lawn Clean
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
+                    <div className="row">
+                        <div className="col-md-2">
+                            <img src={service3} alt="" />
+                        </div>
+                        <div className="col-md-10">
+                            <h4>Land Scaping Design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectet micongue kladipiscing hlelit. Donec ut diam pulvinar, lorem elits bibendum tellus quis, sodales tortor.</p>
                         </div>
                     </div>
                 </div>
-                <div className="row row-cols-1 row-cols-md-3 g-4">
-                    <div className="col">
-                        <div className="h-100">
-                            <div className="card-body text-center">
-                                <h3 className="card-title text-color">Card title</h3>
-                                <h2><i className="fas fa-trash-alt text-color"></i></h2>
-                                <p className="card-text">Lawn Clean
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div className="col-md-4 pt-5">
+                    <img src={mainService} alt="" />
+                </div>
+                <div className="col-md-4">
+                    <div className="row">
+
+                        <div className="col-md-10">
+                            <h4>Land Scaping Design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectet micongue kladipiscing hlelit. Donec ut diam pulvinar, lorem elits bibendum tellus quis, sodales tortor.</p>
+                        </div>
+                        <div className="col-md-2 d-flex align-items-center">
+                            <div>
+                                <img src={service1} alt="" />
                             </div>
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="h-100">
-                            <div className="card-body text-center">
-                                <h3 className="card-title text-color">Card title</h3>
-                                <h2><i className="fas fa-trash-alt text-color"></i></h2>
-                                <p className="card-text">Lawn Clean
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
+                    <div className="row">
+
+                        <div className="col-md-10">
+                            <h4>Land Scaping Design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectet micongue kladipiscing hlelit. Donec ut diam pulvinar, lorem elits bibendum tellus quis, sodales tortor.</p>
+                        </div>
+                        <div className="col-md-2">
+                            <img src={service2} alt="" />
                         </div>
                     </div>
-                    <div className="col">
-                        <div className="h-100">
-                            <div className="card-body text-center">
-                                <h3 className="card-title text-color">Card title</h3>
-                                <h2><i className="fas fa-trash-alt text-color"></i></h2>
-                                <p className="card-text pb-5">Lawn Clean
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            </div>
+                    <div className="row">
+
+                        <div className="col-md-10">
+                            <h4>Land Scaping Design</h4>
+                            <p>Lorem ipsum dolor sit amet, consectet micongue kladipiscing hlelit. Donec ut diam pulvinar, lorem elits bibendum tellus quis, sodales tortor.</p>
+                        </div>
+                        <div className="col-md-2">
+                            <img src={service3} alt="" />
                         </div>
                     </div>
                 </div>

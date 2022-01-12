@@ -1,3 +1,28 @@
 .gallery {
   overflow: hidden;
 }
+
+.section-title {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-title h1::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  content: "";
+  border: 2px solid #6cbe03;
+  width: 10%;
+}
+
+.section-title h1::after {
+  position: absolute;
+  bottom: -10px;
+  left: 566px;
+  content: "";
+  border: 2px solid #6cbe03;
+  width: 10%;
+}
