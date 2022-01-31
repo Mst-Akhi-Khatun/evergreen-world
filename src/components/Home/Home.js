@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutUs from '../AboutUs/AboutUs';
 import Assessment from '../Assessment/Assessment';
 import ChooseUs from '../ChooseUs/ChooseUs';
 import Features from '../Features/Features';
@@ -17,6 +18,7 @@ const Home = () => {
             <Team></Team>
             <ChooseUs></ChooseUs>
             <Assessment></Assessment>
+            <AboutUs></AboutUs>
         </div>
     );
 };

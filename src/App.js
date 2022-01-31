@@ -9,6 +9,10 @@ import {
 import MenuBar from './components/Header/MenuBar/MenuBar';
 import Home from './components/Home/Home';
 import Footer from './components/Footer/Footer';
+import Contact from './components/Contact/Contact';
+import Login from './components/Authentication/Login/Login';
+import Register from './components/Authentication/Register/Register';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   return (
@@ -16,11 +20,23 @@ function App() {
       <Router>
         <MenuBar></MenuBar>
         <Switch>
-          <Route>
+          <Route exact path="/">
             <Home></Home>
           </Route>
-          <Route>
-            
+          <Route exact path="/home">
+            <Home></Home>
+          </Route>
+          <Route exact path="/login">
+            <Login></Login>
+          </Route>
+          <Route exact path="/register">
+            <Register></Register>
+          </Route>
+          <Route path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
           </Route>
         </Switch>
         <Footer></Footer>

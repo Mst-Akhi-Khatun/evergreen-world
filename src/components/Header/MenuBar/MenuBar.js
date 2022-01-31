@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Container, Nav, Navbar, Link } from 'react-bootstrap';
+import { Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../../images/logo.png';
 import logo1 from '../../../images/logo-1.png';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import './MenuBar.css';
+import { Link } from 'react-router-dom';
 
 
 const MenuBar = () => {
@@ -30,16 +31,16 @@ const MenuBar = () => {
             </div>
             <div>
                 <Navbar variant="light" className="background">
-                    <Container>
-                        <Nav.Link href="#home" className="colorGreen"><span className="colorGreen">HOME</span></Nav.Link>
-                        <Nav.Link href="#home"><span className="colorGreen">SERVICE</span></Nav.Link>
-                        <Nav.Link href="#home"><span className="colorGreen">GALLERY</span></Nav.Link>
-                        <Nav.Link href="#features"><span className="colorGreen">ABOUT US</span></Nav.Link>
-                        <Nav.Link href="#features"><span className="colorGreen">OUR TEAM</span></Nav.Link>
-                        <Nav.Link href="#pricing"><span className="colorGreen">CONTACT</span></Nav.Link>
+                    <Container className="menu">
+                        <Link to="/home" className="colorGreen"><span className="colorGreen">HOME</span></Link>
+                        <Link to="/home"><span className="colorGreen">SERVICE</span></Link>
+                        <Link to="/home"><span className="colorGreen">GALLERY</span></Link>
+                        <Link to="/home"><span className="colorGreen">ABOUT US</span></Link>
+                        <Link to="/home"><span className="colorGreen">OUR TEAM</span></Link>
+                        <Link to="/contact"><span className="colorGreen">CONTACT</span></Link>
                         <Nav className="ms-auto">
-                            <Nav.Link href="#home"><span className="colorGreen">LOGIN</span></Nav.Link>
-                            <Nav.Link href="#home"><span className="colorGreen">SIGN UP</span></Nav.Link>
+                            <Link to="/login"><span className="colorGreen">LOGIN</span></Link>
+                            <Link to="/register"><span className="colorGreen">SIGN UP</span></Link>
                         </Nav>
                     </Container>
                 </Navbar>

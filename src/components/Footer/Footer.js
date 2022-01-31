@@ -42,7 +42,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="col-md-7">
-                        <p className="text-end">Copyright &copy 2021 Euro Medical</p>
+                        <p className="text-end">Copyright &copy; 2021 Euro Medical</p>
                     </div>
                 </div>
             </footer>
