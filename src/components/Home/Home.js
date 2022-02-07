@@ -5,6 +5,7 @@ import ChooseUs from '../ChooseUs/ChooseUs';
 import Features from '../Features/Features';
 import Gallery from '../Gallery/Gallery';
 import Banner from '../Header/Banner/Banner';
+import Plant from '../Plant/Plant';
 import Service from '../Service/Service';
 import Team from '../Team/Team';
 
@@ -13,6 +14,7 @@ const Home = () => {
         <div>
             <Banner></Banner>
             <Features></Features>
+            <Plant></Plant>
             <Service></Service>
             <Gallery></Gallery>
             <Team></Team>
