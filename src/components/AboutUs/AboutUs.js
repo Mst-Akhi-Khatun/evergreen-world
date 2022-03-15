@@ -7,7 +7,7 @@ const AboutUs = () => {
             <div className="container">
                 <div className="main-section">
                     <div className="section-title">
-                        <h1 className="text-center y-4">About  <span className="text-color">Gardenor</span></h1>
+                        <h1 className="text-center py-4">About  <span className="text-color">Gardenor</span></h1>
                     </div>
                 </div>
                 <p className="text-center pt-5 font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt laudantium unde, dolores est <br /> corporis, sunt deserunt sequi.</p>

@@ -1,0 +1,10 @@
+.first {
+  height: 600px;
+}
+.div-section {
+  background-image: url(../../images/NotFound/NotFound.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
