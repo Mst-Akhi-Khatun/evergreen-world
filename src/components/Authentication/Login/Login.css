@@ -12,3 +12,9 @@
   margin: 0 auto;
   background-color: #212529;
 }
+.green-bg {
+  background-color: #6cbe03;
+}
+.green-text {
+  color: #6cbe03;
+}

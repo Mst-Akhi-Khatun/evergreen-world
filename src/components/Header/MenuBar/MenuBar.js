@@ -33,7 +33,7 @@ const MenuBar = () => {
                 <Navbar variant="light" className="background">
                     <Container className="menu">
                         <Link to="/home" className="colorGreen"><span className="colorGreen">HOME</span></Link>
-                        <Link to="/home"><span className="colorGreen">SERVICE</span></Link>
+                        <Link to="/service"><span className="colorGreen">SERVICE</span></Link>
                         <Link to="/home"><span className="colorGreen">GALLERY</span></Link>
                         <Link to="/home"><span className="colorGreen">ABOUT US</span></Link>
                         <Link to="/home"><span className="colorGreen">OUR TEAM</span></Link>

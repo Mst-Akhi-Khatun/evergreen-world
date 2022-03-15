@@ -17,7 +17,7 @@ const Plant = () => {
                         <div class="card-body">
                             <h5 class="card-title">Pellentesque aliquet</h5>
                             <a href="">
-                                <button className="rounded-pill px-4 text-white btn background">See more</button>
+                                <button className="rounded-pill px-4 text-white btn background">See Detail</button>
                             </a>
                         </div>
                     </div>
