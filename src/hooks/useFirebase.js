@@ -23,6 +23,7 @@ const useFirebase = () => {
                 const newUser = { email, displayName: name };
                 setUser(newUser);
 
+                // give email and name to store database
                 storeUser(email, name)
 
                 updateProfile(auth.currentUser, {
@@ -78,7 +79,8 @@ const useFirebase = () => {
 
     const storeUser = (email, displayName) => {
         const user = { email, displayName }
-        fetch('https://lip-care-server.herokuapp.com/user', {
+        
+        fetch('http://localhost:5000/user', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(user)
@@ -88,7 +90,7 @@ const useFirebase = () => {
     }
     // check admin
     useEffect(() => {
-        fetch(`https://lip-care-server.herokuapp.com/saveUser/${user?.email}`)
+        fetch(`http://localhost:5000/saveUser/${user?.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
     }, [user?.email])

@@ -1,20 +1,29 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from '../../../images/logo-1.png';
 import useAuth from '../../../hooks/useAuth';
 import { useHistory } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { Link } from 'react-router-dom';
 import MenuBar from '../../Header/MenuBar/MenuBar';
 
 const Register = () => {
-    const { loginUser, error } = useAuth()
+    const { registerUser, error } = useAuth();
     const history = useHistory();
-    const location = useLocation();
-    const { register, handleSubmit } = useForm();
+    const [errorMsg, setErrorMsg] = useState('')
 
+    const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        loginUser(data?.email, data?.password, location, history);
+        console.log(data);
+        registerUser(data?.email, data?.password, data?.username, history);
+        if (data.password.length < 6) {
+            setErrorMsg(<h6 className="text-white pink-bg py-1">Password must be at least 6 characters!</h6>)
+        }
+        else if (error) {
+            setErrorMsg(<h6 className="text-white pink-bg py-1">Email already used</h6>)
+        }
+        else {
+            setErrorMsg('')
+        }
     };
     return (
         <>
@@ -28,22 +37,22 @@ const Register = () => {
                         <div className="form-container mx-auto rounded-3 px-5 py-5">
                             {/* login form */}
                             <form onSubmit={handleSubmit(onSubmit)}>
-                                <input type="text" className="form-control mb-3" {...register("email", { required: true })} placeholder="Enter Your Name" />
+                                <input type="text" className="form-control mb-3" {...register("username", { required: true })} placeholder="Enter Your Name" />
                                 <input type="email" className="form-control" {...register("email", { required: true })} placeholder="Enter Your Email" />
 
                                 <input type="password" className="form-control my-3" {...register("password", { required: true })} placeholder="Enter Your Password" />
-                                {/* <button type="submit" className="btn bg-success w-30 mb-2">LOGIN</button> */}
+                                <div className="ms-5">
+                                    <button type="submit" className="btn green-bg text-white ms-">Register</button>
+                                </div>
                             </form>
                             <div className="d-flex">
                                 <div className="pe-5">
                                     <p className="text-white">Don’t have an account? <Link to="/register" className="green-text pe-5">Create Account</Link> </p>
                                 </div>
-                                <div className="ms-5">
-                                    <button className="btn green-bg text-white ms-">LOGIN</button>
-                                </div>
+
                             </div>
 
-                            {error ? <p className="pink-bg text-white py-1" >Incorrect email or password!</p> : <p></p>}
+
                         </div>
                     </div>
                 </div>
