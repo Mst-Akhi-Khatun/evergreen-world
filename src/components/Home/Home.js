@@ -5,6 +5,7 @@ import ChooseUs from '../ChooseUs/ChooseUs';
 import Features from '../Features/Features';
 import Gallery from '../Gallery/Gallery';
 import Banner from '../Header/Banner/Banner';
+import MenuBar from '../Header/MenuBar/MenuBar';
 import Plant from '../Plant/Plant';
 import Service from '../Service/Service';
 import Subscribe from '../Subscribe/Subscribe';
@@ -13,6 +14,7 @@ import Team from '../Team/Team';
 const Home = () => {
     return (
         <div>
+            <MenuBar></MenuBar>
             <Banner></Banner>
             <Features></Features>
             <Plant></Plant>

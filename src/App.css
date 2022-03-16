@@ -6,11 +6,42 @@
   color: #6cbe03;
 }
 
-.green-bg{
-  background-color: #6CBE03;
+.green-bg {
+  background-color: #6cbe03;
 }
 .font {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color: #545454;
+}
+
+.pink-text {
+  color: #6cbe03;
+}
+.light-pink-text {
+  color: #89d526;
+}
+.pink-btn {
+  background-color: #6cbe03;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  color: white;
+  padding: 8px 25px;
+}
+.pink-bg {
+  background-color: #6cbe03;
+}
+
+.light-pink-bg {
+  background-color: #c3e893;
+}
+.menu-item a {
+  text-decoration: none;
+  /* color: rgb(230, 91, 119); */
+  color: #6cbe03;
+}
+
+.menu-item a:hover {
+  color: #49760f;
 }

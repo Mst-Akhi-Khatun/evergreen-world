@@ -1,3 +1,39 @@
 .decorate {
   padding-left: 100px;
 }
+/* .single-feature-box.media {
+  overflow: visible;
+  border: 1px solid #f1f1f1;
+  transition: all 0.3s ease 0s;
+  padding: 50px 20px;
+} */
+
+
+.single-feature-box.media {
+  overflow: visible;
+  border: 1px solid #f1f1f1;
+  transition: all 0.3s ease 0s;
+  padding: 50px 20px;
+}
+.border-section {
+  border: 1px solid #f1f1f1;
+}
+.resize{
+  font-size: 20px;
+}
+
+/* .media-body.hover-midea {
+  background: #619d09 none repeat scroll 0 0;
+  display: block;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 20px;
+  position: absolute;
+  top: -8px;
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
+  visibility: hidden;
+  width: 100%;
+  z-index: 999;
+} */

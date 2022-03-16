@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Plante1 from '../../images/Plante/plante1.jpg';
 import Plante2 from '../../images/Plante/plante2.jpg';
 import Plante3 from '../../images/Plante/plante3.jpg';
@@ -16,9 +17,12 @@ const Plant = () => {
                         <img src={Plante1} class="card-img-top" alt="..." />
                         <div class="card-body">
                             <h5 class="card-title">Pellentesque aliquet</h5>
-                            <a href="">
+                            <Link to='/detail'>
+                                        <button className="pink-btn mt-2">Order Now</button>
+                                    </Link>
+                            {/* <a href="">
                                 <button className="rounded-pill px-4 text-white btn background">See Detail</button>
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                 </div>

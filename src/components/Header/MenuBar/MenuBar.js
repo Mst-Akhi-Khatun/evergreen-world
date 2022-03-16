@@ -38,6 +38,7 @@ const MenuBar = () => {
                         <Link to="/home"><span className="colorGreen">ABOUT US</span></Link>
                         <Link to="/home"><span className="colorGreen">OUR TEAM</span></Link>
                         <Link to="/contact"><span className="colorGreen">CONTACT</span></Link>
+                        <Link to="/dashboard"><span className="colorGreen">DASHBOARD</span></Link>
                         <Nav className="ms-auto">
                             <Link to="/login"><span className="colorGreen">LOGIN</span></Link>
                             <Link to="/register"><span className="colorGreen">SIGN UP</span></Link>
