@@ -79,7 +79,7 @@ const useFirebase = () => {
 
     const storeUser = (email, displayName) => {
         const user = { email, displayName }
-        
+
         fetch('http://localhost:5000/user', {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
@@ -89,11 +89,11 @@ const useFirebase = () => {
 
     }
     // check admin
-    useEffect(() => {
-        fetch(`http://localhost:5000/saveUser/${user?.email}`)
-            .then(res => res.json())
-            .then(data => setAdmin(data.admin))
-    }, [user?.email])
+    // useEffect(() => {
+    //     fetch(`http://localhost:5000/saveUser/${user?.email}`)
+    //         .then(res => res.json())
+    //         .then(data => setAdmin(data.admin))
+    // }, [user?.email])
 
 
     return {

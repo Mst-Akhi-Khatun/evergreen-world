@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import logo from '../../../images/logo.png';
 import logo1 from '../../../images/logo-1.png';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import './MenuBar.css';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 
 
 const MenuBar = () => {
     const [startDate, setStartDate] = useState(new Date());
+    const { user, logout } = useAuth()
     return (
         <div>
             <div>
@@ -39,10 +40,16 @@ const MenuBar = () => {
                         <Link to="/home"><span className="colorGreen">OUR TEAM</span></Link>
                         <Link to="/contact"><span className="colorGreen">CONTACT</span></Link>
                         <Link to="/dashboard"><span className="colorGreen">DASHBOARD</span></Link>
-                        <Nav className="ms-auto">
-                            <Link to="/login"><span className="colorGreen">LOGIN</span></Link>
-                            <Link to="/register"><span className="colorGreen">SIGN UP</span></Link>
+                        {user?.email ? <Nav className="ms-auto">
+                            <Link to="/"><span className="colorGreen text-uppercase">{user?.displayName}</span></Link>
+                            <Link onClick={logout}><span className="colorGreen">LOG OUT</span></Link>
+
                         </Nav>
+                            :
+                            <Nav className="ms-auto">
+                                <Link to="/login"><span className="colorGreen">LOGIN</span></Link>
+                                <Link to="/register"><span className="colorGreen">SIGN UP</span></Link>
+                            </Nav>}
                     </Container>
                 </Navbar>
             </div>

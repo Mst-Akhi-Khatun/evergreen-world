@@ -1,0 +1,73 @@
+[
+    {
+        "id":"001",
+        "name":"Pellentesque aliquet",
+        "description":"Countless women have found a favorite in Charlotte Tilbury's Matte Revolution Lipstick.",
+        "price":"50",
+        "rating": "1.5",
+        "img":"https://i.ibb.co/rp3XvYy/plante1.jpg"
+    },
+    
+    {
+        "id":"002",
+        "name":" American Marigold",
+        "description":"This tube is nothing less than iconic, and it's most famous color has to be the 999 shade.",
+        "price":"60",
+        "rating": "1.5",
+        "img":"https://i.ibb.co/1GfTZNb/plante2.jpg"
+    },
+    
+    {
+        "id":"003",
+        "name":"Black Eyed Susan",
+        "description":"Line-smoothing collagen iconic and hydrating hyaluronic acid are two of the not-so-secret.",
+        "price":"70",
+        "rating": "1.5",
+        "img":"https://i.ibb.co/PGWzp31/plante3.jpg"
+    },
+    
+    {
+        "id":"004",
+        "name":"Bleeding Heart",
+        "description":"Great for leaving lips feeling moisturized instead of dry or sticky, this classic tube always brings.",
+        "price":"80",
+        "rating": "1.5",
+        "img":"https://i.ibb.co/QrmLCVg/plante4.jpg"
+    },
+    
+    {
+        "id":"005",
+        "name":"Bloody Cranesbill",
+        "description":"This cult-favorite brand finally launched a full-on lipstick, which they've dubbed the cashmere.",
+        "price":"90",
+        "rating": "1.5",
+        "img":"https://i.ibb.co/rM6Pdz0/plante5.jpg"
+    },
+    
+    {
+        "id":"006",
+        "name":"Butterfly Weed",
+        "description":"One of our new favorite affordable beauty brands lipstick on the market, Rare Beauty",
+        "price":"100",
+        "rating": "1.5",
+        "img":"https://i.ibb.co/5x4MntN/plante6.jpg"
+    }
+]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
