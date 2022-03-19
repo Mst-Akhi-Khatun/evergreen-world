@@ -3,7 +3,7 @@ import paymentImg from '../../../images/payment.png'
 
 const Payment = () => {
     return (
-        <div className="my-5">
+        <div className="my-5 text-center">
             <h1 className="pink-text">Payment System Coming...</h1>
             <img src={paymentImg} alt="" className="img-fluid" />
         </div>

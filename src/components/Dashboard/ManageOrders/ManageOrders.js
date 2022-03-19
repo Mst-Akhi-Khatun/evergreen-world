@@ -7,16 +7,19 @@ const ManageOrders = () => {
     const [order, setOrder] = useState({});
     const [update, setUpdate] = useState(false);
 
+    // load all orders
     useEffect(() => {
-        fetch('https://lip-care-server.herokuapp.com/allOrders')
+        fetch('http://localhost:5000/allOrders')
             .then(res => res.json())
             .then(data => setAllOrders(data))
     }, [remove, update])
 
+
+
     const handleRemove = (id) => {
         const proceed = window.confirm("Are you sure to remove order?");
         if (proceed) {
-            fetch(`https://lip-care-server.herokuapp.com/removeOrder/${id}`, {
+            fetch(`http://localhost:5000/removeOrder/${id}`, {
                 method: 'DELETE',
                 headers: { 'Content-Type': 'application/json' }
             })
@@ -30,14 +33,17 @@ const ManageOrders = () => {
         }
     }
 
+
+
     // update status
     const handleShipped = (id) => {
-        fetch(`https://lip-care-server.herokuapp.com/allOrders/${id}`)
+        fetch(`http://localhost:5000/allOrders/${id}`)
             .then((res) => res.json())
             .then((data) => setOrder(data));
-        setOrder(order.status = "Shipped");
 
-        fetch(`https://lip-care-server.herokuapp.com/allOrders/${id}`, {
+
+        order.status = "Shipped"
+        fetch(`http://localhost:5000/allOrders/${id}`, {
             method: "PUT",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(order),
@@ -53,7 +59,7 @@ const ManageOrders = () => {
     return (
         <div className="mb-5 px-2" style={{ minHeight: '500px' }}>
             <h1 className="pink-text text-center mt-2">Manage All Orders</h1>
-            <h3 className="light-pink-text text-center">All customers ordered lipsticks are here</h3>
+            <h3 className="light-pink-text text-center">All customers ordered plants are here</h3>
             <Table className="light-pink-bg my-5" responsive="sm" striped bordered hover>
                 <thead>
                     <tr className="pink-text">
@@ -61,6 +67,7 @@ const ManageOrders = () => {
                         <th>User Name</th>
                         <th>Email </th>
                         <th>Phone</th>
+                        <th>Address</th>
                         <th>Product</th>
                         <th>Status</th>
                     </tr>
@@ -72,10 +79,11 @@ const ManageOrders = () => {
                             <td>{items?.username}</td>
                             <td>{items?.email}</td>
                             <td>{items?.phone}</td>
-                            <td>{items?.productName} ({items?.status})</td>
+                            <td>{items?.address}</td>
+                            <td>{items?.plantName} ({items?.status})</td>
                             <td>
-                                <button onClick={() => handleShipped(items?._id)} className="btn btn-outline-info mt-1">Shipped</button>
-                                <button onClick={() => handleRemove(items?._id)} className="btn btn-outline-danger ms-2 mt-1">Cancel</button>
+                                <button onClick={() => handleShipped(items?._id)} className="btn btn-outline-success mt-1">Shipped</button>
+                                <button onClick={() => handleRemove(items?._id)} className="btn btn-outline-success ms-2 mt-1">Cancel</button>
                             </td>
                         </tr>)
                     }

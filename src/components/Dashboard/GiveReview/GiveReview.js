@@ -21,7 +21,7 @@ const GiveReview = () => {
     };
     return (
         <div className="container mt-3">
-            <h1 className="pink-text">Give A Review About This Site</h1>
+            <h1 className="pink-text text-center">Give A Review About This Site</h1>
             <div className="row">
                 <div className="col-md-3"></div>
                 <div className="col-md-6">

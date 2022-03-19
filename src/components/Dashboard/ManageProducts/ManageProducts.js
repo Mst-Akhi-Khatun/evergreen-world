@@ -9,7 +9,7 @@ const ManageProducts = () => {
     const removeItem = (id) => {
         const proceed = window.confirm('Are you sure you want to remove?')
         if (proceed) {
-            fetch(`https://lip-care-server.herokuapp.com/removeItem/${id}`, {
+            fetch(`http://localhost:5000/removeItem/${id}`, {
                 method: 'DELETE',
                 headers: { 'content-type': 'application/json' }
             })
@@ -25,7 +25,7 @@ const ManageProducts = () => {
 
     return (
         <div className="mb-5" style={{ minHeight: "600px" }}>
-            <h1 className="text-uppercase mt-3">All Available <span className="pink-text">Lipsticks</span></h1>
+            <h1 className="text-uppercase mt-3 text-center">All Available <span className="pink-text">Lipsticks</span></h1>
             <div className="container-fluid px-4">
                 {items?.length ? <div className="row row-cols-1 my-2 row-cols-md-3 g-5">
 

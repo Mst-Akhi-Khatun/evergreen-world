@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        fetch("https://lip-care-server.herokuapp.com/addItem", {
+        fetch("http://localhost:5000/addItem", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(data)
@@ -41,6 +41,12 @@ const AddProduct = () => {
                             {...register("description", { required: true })}
                             className="form-control my-3 "
                             placeholder="Description"
+                        />
+                        <input
+                            type="number"
+                            {...register("rating", { required: true, min: 0, max: 5 })}
+                            className="form-control my-3 "
+                            placeholder="Rating"
                         />
                         <input
                             type="url"

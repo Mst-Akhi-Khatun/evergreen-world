@@ -4,18 +4,13 @@ import { useForm } from 'react-hook-form';
 import Rating from 'react-rating';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import useProduct from '../../hooks/useProduct';
 
 
 const Plant = () => {
-    const [plants, setPlants] = useState([]);
+    const [plants, setPlants] = useProduct();
     const [singlePlant, setSinglePlant] = useState({});
 
-    // load all plants
-    useEffect(() => {
-        fetch('http://localhost:5000/plants')
-            .then(res => res.json())
-            .then(data => setPlants(data))
-    }, [])
 
     // show modal 
     const [show, setShow] = useState(false);
@@ -37,7 +32,7 @@ const Plant = () => {
     const onSubmit = data => {
         data.status = 'Pending';
         data.image = singlePlant.img;
-        console.log(data);
+        data.price = singlePlant.price;
         fetch("http://localhost:5000/order", {
             method: "POST",
             headers: { 'Content-Type': 'application/json' },

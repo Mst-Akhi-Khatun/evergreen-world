@@ -1,14 +1,14 @@
 import { useEffect, useState } from "react"
 
 const useProduct = () => {
-    const [items, setItems] = useState([]);
+    const [plants, setPlants] = useState([]);
     useEffect(() => {
-        fetch('https://lip-care-server.herokuapp.com/products')
+        fetch('http://localhost:5000/plants')
             .then(res => res.json())
-            .then(data => setItems(data))
+            .then(data => setPlants(data))
     }, [])
 
-    return [items, setItems];
+    return [plants, setPlants];
 }
 
 export default useProduct;
